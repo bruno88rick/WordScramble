@@ -41,6 +41,7 @@ struct ContentView: View {
                     }
                 }
             }
+            //putting things near the safeArea (top or botton)
             .safeAreaInset(edge: .bottom) {
                 HStack(spacing: 20){
                     Text("Word Score:")
