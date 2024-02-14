@@ -84,7 +84,7 @@ struct ContentView: View {
         //exit iif the remaining string is empty
         guard answer.count > 0 else { return }
         
-        // exit if the word
+        // exit if the word is the same of root word
         guard answer != rootWord else {
             wordError(title: "Are you kidding  me, uh?", message: "Same word? I should close this! Try again!")
             return
@@ -110,7 +110,7 @@ struct ContentView: View {
             return
         }
 
-        //anitating the insert procedure
+        //animating the insert procedure
         withAnimation {
             usedWords.insert(answer, at: 0)
         }
